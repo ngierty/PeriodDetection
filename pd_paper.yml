@@ -1,0 +1,9 @@
+name: pd
+channels:
+  - conda-forge
+dependencies:
+ - numpy
+ - pandas
+ - matplotlib
+ - scipy
+ - astropy
