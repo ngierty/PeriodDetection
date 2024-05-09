@@ -1,6 +1,6 @@
 README: 
 
-PeriodDetection folder:
+Period Detection GitHub Repository Outline:
 	USE pd_paper.yml FOR RECREATING THE CONDA ENVIRONMENT FOR RUNNING THE CODE
 	01_Gen_Data.sh runs code/01_Gen_Data.py; generates the data used for the simulations from the raw Gaia data; takes about 2 hours to run
 	run_02_batch_pas_even.sh runs code/02_PDM_AOV_SL_multi.py; calculates the PDM, AOV, and SL statistics for evenly spaced observations with homoscedastic error under H0; takes about 7 hours to run
@@ -12,6 +12,9 @@ PeriodDetection folder:
 	run_04_paslls.sh runs code/04_plot_PDM_AOV_SL_LS.py; makes the majority of the plots in the paper; takes about 15 minutes to run
 
 RAW folder:
+
+	This folder will need to be made by the user. 
+	It should also contain subfolders with the names gdr3_vari_eclipsing_binary and gdr3_epoch_photometry.
 
 	Gaia documentation: https://gea.esac.esa.int/archive/
 
@@ -59,6 +62,11 @@ CODE folder:
 	06_OtherFigs.py: Creates Figure 1 in the manuscript
 
 
-INTER folder contains the intermediate output from all the code described above
+INTER folder:
+	This folder will need to be made by the user. 
+	It should also contain subfolders with the names gdr3_vari_eclipsing_binary and gdr3_epoch_photometry.
+	inter/gdr3_vari_eclipsing_binary contains the saved Python datasets from raw/gdr3_vari_eclipsing_binary
+	inter/gdr3_epoch_photometry contains the saved Python datasets from raw/gdr3_epoch_photometry
+	inter also contains the intermediate output from all the code described above
 
 OUTPUT folder contains all the finalized output from the code above
