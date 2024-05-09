@@ -1,6 +1,6 @@
 README: 
 
-CODEBOX folder:
+PeriodDetection folder:
 	USE pd_paper.yml FOR RECREATING THE CONDA ENVIRONMENT FOR RUNNING THE CODE
 	01_Gen_Data.sh runs code/01_Gen_Data.py; generates the data used for the simulations from the raw Gaia data; takes about 2 hours to run
 	run_02_batch_pas_even.sh runs code/02_PDM_AOV_SL_multi.py; calculates the PDM, AOV, and SL statistics for evenly spaced observations with homoscedastic error under H0; takes about 7 hours to run
